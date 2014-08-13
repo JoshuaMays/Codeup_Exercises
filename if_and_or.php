@@ -26,4 +26,21 @@ if ($z > 0 || $z < 10) {
 	echo "$z is greater than 0 0R less than 10."
 }
 
+// If $x is greater than 0 AND less than 10, echo the result as
+// a sentence "$x is greater than 0 AND less than 10."
+
+// repeat the if statement for $y and $z
+
+if ($x > 0 && $x is < 10) {
+	echo "$x is greater than 0 AND less than 10."
+}
+
+if ($y > 0 && $y is < 10) {
+	echo "$y is greater than 0 AND less than 10."
+}
+
+if ($z > 0 && $z is < 10){
+	echo "$z is greater than 10 AND less than 10."
+}
+
 ?>
