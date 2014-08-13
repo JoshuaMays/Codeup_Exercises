@@ -15,15 +15,15 @@ if ($x < $y && $y < $z) {
 //repeat the if statement for $y and $z
 
 if ($x > 0 || $x < 10) {
-	echo "$x is greater than 0 OR less than 10."
+	echo "$x is greater than 0 OR less than 10.\n";
 }
 
 if ($y > 0 || $y < 10) {
-	echo "$y is greater than 0 OR less than 10."
+	echo "$y is greater than 0 OR less than 10.\n";
 }
 
 if ($z > 0 || $z < 10) {
-	echo "$z is greater than 0 0R less than 10."
+	echo "$z is greater than 0 0R less than 10.\n";
 }
 
 // If $x is greater than 0 AND less than 10, echo the result as
@@ -31,16 +31,16 @@ if ($z > 0 || $z < 10) {
 
 // repeat the if statement for $y and $z
 
-if ($x > 0 && $x is < 10) {
-	echo "$x is greater than 0 AND less than 10."
+if ($x > 0 && $x < 10) {
+	echo "$x is greater than 0 AND less than 10.\n";
 }
 
-if ($y > 0 && $y is < 10) {
-	echo "$y is greater than 0 AND less than 10."
+if ($y > 0 && $y < 10) {
+	echo "$y is greater than 0 AND less than 10.\n";
 }
 
-if ($z > 0 && $z is < 10){
-	echo "$z is greater than 10 AND less than 10."
+if ($z > 0 && $z < 10){
+	echo "$z is greater than 10 AND less than 10.\n";
 }
 
 ?>
