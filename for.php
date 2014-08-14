@@ -9,8 +9,14 @@ $end = trim(fgets(STDIN));
 fwrite(STDOUT, "Enter an incrementer: ");
 $incrementer = trim(fgets(STDIN));
 
+if (!$incrementer) {
+	$incrementer = 1;
+}
+
 for ($i = $start; $i <= $end; $i+=$incrementer) {
 	fwrite(STDOUT,"$i\n");
 }
+
+
 
 ?>
