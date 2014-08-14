@@ -28,7 +28,7 @@ while (!is_numeric($start) || !is_numeric($end)) {
 if (!is_numeric($incrementer)) {
 	$incrementer = 1;
 }
-// Check if program should be increment or decrement.
+// Check if program should increment or decrement.
 if ($start <= $end) {
 	for ($i = $start; $i <= $end; $i+=$incrementer) {
 		fwrite(STDOUT,"$i\n");
