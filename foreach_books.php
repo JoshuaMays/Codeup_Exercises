@@ -23,14 +23,14 @@ $books = array(
     )
 );
 
-foreach ($books as $title => $bookinfo) {
+foreach ($books as $title => $book) {
 
 	// Make sure book was published after 1950.
-	if ($books[$title]['published'] >= 1950) {
+	if ($book['published'] >= 1950) {
 		echo "\n" . $title . "\n";
 		echo "##########################\n";
  
-		foreach ($bookinfo as $key => $metadata) {
+		foreach ($book as $key => $metadata) {
 			echo "$key: $metadata.\n";
 		}
 			
