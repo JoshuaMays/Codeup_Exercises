@@ -1,11 +1,22 @@
 <?php
 
+function divideByZero($a, $b) {
+	echo '$a is ' . $a . ' and $b is ' . $b . '. ------ ';
+	echo 'ERROR: And that\'s why you never divide by zero!' . PHP_EOL;
+}
+
+function nonNumericValues($a, $b) {
+	echo '$a is ' . $a . ' and $b is ' . $b . '. ------ ';
+	echo 'ERROR: Must pass numeric values to function.' . PHP_EOL;
+}
+
+
 function add($a, $b) {
 	if(is_numeric($a) && is_numeric($b)) {
 		echo $a + $b . PHP_EOL;		
 	}
 	else {
-		echo "ERROR: Must pass numeric values to add()" . PHP_EOL;
+		nonNumericValues($a,$b);
 	}
 
 }
@@ -15,7 +26,7 @@ function subtract($a, $b) {
 		echo $a - $b . PHP_EOL;		
 	}
 	else {
-		echo "ERROR: Must pass numeric values to subtract()" . PHP_EOL;
+		nonNumericValues($a, $b);
 	}
 }
 
@@ -24,7 +35,7 @@ function multiply($a, $b) {
 		echo $a * $b . PHP_EOL;		
 	}
 	else {
-		echo "ERROR: Must pass numeric values to multiply()" . PHP_EOL;
+		nonNumericValues($a, $b);
 	}
 }
 
@@ -34,13 +45,11 @@ function divide($a, $b) {
 			echo $a / $b . PHP_EOL;	
 		}
 		else {
-			echo '$a is ' . $a . ' and $b is ' . $b . '. ------ ';
-			echo "ERROR: And that's why you never divide by zero!" . PHP_EOL;
+			divideByZero($a, $b);
 		}	
 	}
 	else {
-		echo '$a is ' . $a . ' and $b is ' . $b . '. ------';
-		echo "ERROR: Must pass numeric values to divide()" . PHP_EOL;
+		nonNumericValues($a, $b);
 	}
 }
 
@@ -50,18 +59,16 @@ function modulus($a, $b) {
 			echo $a % $b . PHP_EOL;	
 		}
 		else {
-			echo '$a is ' . $a . ' and $b is ' . $b . '. ------ ';			
-			echo "ERROR: And that's why you never divide by zero!" . PHP_EOL;
+			divideByZero($a, $b);
 		}		
 	}
 	else {
-		echo '$a is ' . $a . ' and $b is ' . $b . '. ------';
-		echo "ERROR: Must pass numeric values to modulus()" . PHP_EOL;
+		nonNumericValues($a, $b);
 	}
 }
 
 add(1,1);
-subtract(39, 2);
+subtract(39, 'alphabet');
 multiply(10, 9);
 divide(9, 0);
 modulus(15, 2);
