@@ -38,4 +38,27 @@ switch($day_of_week) {
 		break;
 }
 
+if ($day_of_week == 1) {
+	// Output Monday
+	echo 'Monday' . PHP_EOL;
+} elseif ($day_of_week == 2) {
+	// Output Tuesday
+	echo 'Tuesday' . PHP_EOL;
+} elseif ($day_of_week == 3) {
+	// Output Wednesday
+	echo 'Wednesday' . PHP_EOL;
+} elseif ($day_of_week == 4) {
+	// Output Thursday
+	echo 'Thursday' .  PHP_EOL;
+} elseif ($day_of_week == 5) {
+	// Output Friday
+	echo 'Friday' . PHP_EOL;
+} elseif ($day_of_week == 6) {
+	// Output Saturday
+	echo 'Saturday' . PHP_EOL;
+} elseif ($day_of_week == 7) {
+	// Output Sunday
+	echo 'Sunday' . PHP_EOL;
+}
+
 ?>
