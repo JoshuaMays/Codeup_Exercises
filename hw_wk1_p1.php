@@ -4,8 +4,7 @@ $people = array(
 	array(
 		'name' => array(
 			'first' => "Joshua",
-			'last' => "Mays"
-		
+			'last' => "Mays"	
 		),
 		'phone_number' => '210-286-4336',
 		'address' => '13402 El Mirador St. SA, TX 78233'
