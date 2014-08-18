@@ -30,7 +30,13 @@ function multiply($a, $b) {
 
 function divide($a, $b) {
 	if(is_numeric($a) && is_numeric($b)) {
-		echo $a / $b . PHP_EOL;		
+		if ($b != 0) {
+			echo $a / $b . PHP_EOL;	
+		}
+		else {
+			echo '$a is ' . $a . ' and $b is ' . $b . '. ------ ';
+			echo "ERROR: And that's why you never divide by zero!" . PHP_EOL;
+		}	
 	}
 	else {
 		echo "ERROR: Must pass numeric values to divide()" . PHP_EOL;
@@ -39,7 +45,13 @@ function divide($a, $b) {
 
 function modulus($a, $b) {
 	if(is_numeric($a) && is_numeric($b)) {
-		echo $a % $b . PHP_EOL;		
+		if ($b != 0) {
+			echo $a % $b . PHP_EOL;	
+		}
+		else {
+			echo '$a is ' . $a . ' and $b is ' . $b . '. ------ ';			
+			echo "ERROR: And that's why you never divide by zero!" . PHP_EOL;
+		}		
 	}
 	else {
 		echo "ERROR: Must pass numeric values to modulus()" . PHP_EOL;
@@ -49,8 +61,8 @@ function modulus($a, $b) {
 add(1,1);
 subtract(39, 2);
 multiply(10, 9);
-divide(9, 3);
-modulus(15, 3);
+divide(9, 0);
+modulus(15, 0);
 
 
 $a = 50;
