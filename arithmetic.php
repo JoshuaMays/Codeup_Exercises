@@ -57,7 +57,7 @@ function divide($a, $b) {
 		}
 		else {
 			// Call divideByZero error function if the second parameter 
-			// is zero. NEVER DIVIDE BY ZERO
+			// is zero. NEVER DIVIDE BY ZERO			
 			divideByZero($a, $b);
 		}	
 	}
