@@ -27,13 +27,14 @@ $people = array(
 	)
 );
 
-// Set counter to number each different person.
-$counter = 1;
-
 // Loop through $people array to print out personal information for each person.
 foreach ($people as $key => $person) {
+	
+	// Increment counter for next person.
+	$key++;
+	
 	// Grab first and last name from 'name' array
-	echo "$counter. " . $person['name']['first'] . " " . $person['name']['last'] . PHP_EOL;
+	echo "$key. " . $person['name']['first'] . ' ' . $person['name']['last'] . PHP_EOL;
 	
 	// Grab phone number from 'phone_number' array
 	echo "   Phone: " . $person['phone_number'] . PHP_EOL;
@@ -41,8 +42,7 @@ foreach ($people as $key => $person) {
 	// Grab address from 'address' array
 	echo "   Address: " . $person['address'] . PHP_EOL . PHP_EOL;
 
-	// Increment counter for next person.
-	$counter++;
+
 }
 
 ?>
