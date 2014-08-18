@@ -12,9 +12,12 @@ function nonNumericValues($a, $b) {
 
 
 function add($a, $b) {
+	// Only add the parameters if both values are numeric.
 	if(is_numeric($a) && is_numeric($b)) {
 		echo $a + $b . PHP_EOL;		
 	}
+	// Call nonNumericValues error function if at least one of 
+	// the parameters is non-numeric.
 	else {
 		nonNumericValues($a,$b);
 	}
@@ -22,47 +25,65 @@ function add($a, $b) {
 }
 
 function subtract($a, $b) {
+	// Only subtract the parameters if both values are numeric.
 	if(is_numeric($a) && is_numeric($b)) {
 		echo $a - $b . PHP_EOL;		
 	}
 	else {
+		// Call nonNumericValues error function if at least one of 
+		// the parameters is non-numeric.
 		nonNumericValues($a, $b);
 	}
 }
 
 function multiply($a, $b) {
+	// Only multiply the parameters if both values are numeric.
 	if(is_numeric($a) && is_numeric($b)) {
 		echo $a * $b . PHP_EOL;		
 	}
 	else {
+		// Call nonNumericValues error function if at least one of 
+		// the parameters is non-numeric.
 		nonNumericValues($a, $b);
 	}
 }
 
 function divide($a, $b) {
+	// Only divide the parameters if both values are numeric.
 	if(is_numeric($a) && is_numeric($b)) {
+		// AND only if the second parameter is not zero.
 		if ($b != 0) {
 			echo $a / $b . PHP_EOL;	
 		}
 		else {
+			// Call divideByZero error function if the second parameter 
+			// is zero. NEVER DIVIDE BY ZERO
 			divideByZero($a, $b);
 		}	
 	}
 	else {
+		// Call nonNumericValues error function if at least one of 
+		// the parameters is non-numeric.
 		nonNumericValues($a, $b);
 	}
 }
 
 function modulus($a, $b) {
+	// Only find the modulus of the parameters if both values are numeric.
 	if(is_numeric($a) && is_numeric($b)) {
+		// AND only if the second parameter is not zero.
 		if ($b != 0) {
 			echo $a % $b . PHP_EOL;	
 		}
 		else {
+			// Call divideByZero error function if the second parameter 
+			// is zero. NEVER DIVIDE BY ZERO
 			divideByZero($a, $b);
 		}		
 	}
 	else {
+		// Call nonNumericValues error function if at least one of 
+		// the parameters is non-numeric.
 		nonNumericValues($a, $b);
 	}
 }
