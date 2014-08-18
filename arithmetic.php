@@ -16,7 +16,7 @@ function divide($a, $b) {
 	echo $a / $b . PHP_EOL;
 }
 
-function modulus($a $b) {
+function modulus($a, $b) {
 	echo $a % $b . PHP_EOL;
 }
 
