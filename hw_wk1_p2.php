@@ -44,17 +44,17 @@ $quiz = [
 foreach($quiz as $questionNumber => $value) {
 
 	// Output the question number and the question. 
-	echo $questionNumber . ". {$value['question']} \n";
+	echo $questionNumber . ". {$value['question']} " . PHP_EOL;
 
 	// Loop through the answers array to access each answer choice
 	foreach($value['answers'] as $answerChoice => $answerContent) {
 		
 		// Check if the key answerChoice is equal to the string of correct_answer
 		if ($answerChoice == $value['correct_answer']) {
-			echo "  *$answerChoice.  $answerContent\n";
+			echo "  *$answerChoice.  $answerContent" . PHP_EOL;
 		}
 		else {
-			echo "   $answerChoice.  $answerContent\n";
+			echo "   $answerChoice.  $answerContent" . PHP_EOL;
 		}
 	} // End inner foreach loop
 
