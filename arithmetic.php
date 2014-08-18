@@ -39,6 +39,7 @@ function divide($a, $b) {
 		}	
 	}
 	else {
+		echo '$a is ' . $a . ' and $b is ' . $b . '. ------';
 		echo "ERROR: Must pass numeric values to divide()" . PHP_EOL;
 	}
 }
@@ -54,6 +55,7 @@ function modulus($a, $b) {
 		}		
 	}
 	else {
+		echo '$a is ' . $a . ' and $b is ' . $b . '. ------';
 		echo "ERROR: Must pass numeric values to modulus()" . PHP_EOL;
 	}
 }
@@ -62,7 +64,7 @@ add(1,1);
 subtract(39, 2);
 multiply(10, 9);
 divide(9, 0);
-modulus(15, 0);
+modulus(15, 2);
 
 
 $a = 50;
