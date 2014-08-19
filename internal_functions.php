@@ -6,40 +6,41 @@ $array = array(1,2,3);
 $serialArray = serialize($array);
 $unserialArray = unserialize($serialArray);
 
-// function amISet($check) {
-// 	if (isset($check)) {
-// 		$result = "SET";
-// 		return $result;
-// 	}
-// 	else {
-// 		$result = "EMPTY";
-// 		return $result;
-// 	}
-// }
-
-function amIEmpty($check) {
-	if (empty($check)) {
-		$result = "EMPTY";
+function amISet($check) {
+	unset($check);
+	if (isset($check)) {
+		$result = "SET";
 		return $result;
 	}
 	else {
-		$result = "NOT EMPTY";
+		$result = "EMPTY";
 		return $result;
 	}
 }
 
+// function amIEmpty($check) {
+// 	if (empty($check)) {
+// 		$result = "EMPTY";
+// 		return $result;
+// 	}
+// 	else {
+// 		$result = "NOT EMPTY";
+// 		return $result;
+// 	}
+// }
 
-// $checked = amISet($nothing);
-// echo '$checked is ' . $checked . '.' . PHP_EOL;
 
-$checked = amIEmpty($nothing);
+$checked = amISet($nothing);
 echo '$checked is ' . $checked . '.' . PHP_EOL;
 
-// $checked = amISet($something);
+// $checked = amIEmpty($nothing);
 // echo '$checked is ' . $checked . '.' . PHP_EOL;
 
-$checked = amIEmpty($something);
+$checked = amISet($something);
 echo '$checked is ' . $checked . '.' . PHP_EOL;
+
+// $checked = amIEmpty($something);
+// echo '$checked is ' . $checked . '.' . PHP_EOL;
 
 // $checked = amISet($serialArray);
 // echo '$checked is ' . $checked . '.' . PHP_EOL;
