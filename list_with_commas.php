@@ -6,8 +6,10 @@
 // 	return $physicists_string;
 // }
 
-function humanized_list($physicists_array) {
-	asort($physicists_array);
+function humanized_list($physicists_array, $sort = false) {
+	if ($sort) {
+		asort($physicists_array);
+	}
 	$trailing_physicist = array_pop($physicists_array);
 	$physicists_string = implode(", ", $physicists_array) . ", and {$trailing_physicist}";
 	return $physicists_string;
