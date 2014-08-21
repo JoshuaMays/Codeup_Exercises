@@ -7,7 +7,7 @@ function humanized_list($string, $sort = false) {
 
 	// Check if we should sort the array first.
 	if ($sort) {
-		asort($array);
+		sort($array);
 	}
 	// Remove and save the last array value for later
 	$trailing = array_pop($array);
