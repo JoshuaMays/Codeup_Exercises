@@ -18,9 +18,6 @@ function humanized_list($string, $sort = false) {
 
 $physicists_string = 'Gordon Freeman, Samantha Carter, Sheldon Cooper, Quinn Mallory, Bruce Banner, Tony Stark';
 
-// // Convert string into an array.
-// $physicists_array = explode(", ", $physicists_string);
-
 // Call humanized_list and save the returned value (human-readable string).
 $famous_fake_physicists = humanized_list($physicists_string, TRUE);
 
