@@ -24,17 +24,15 @@ $books = array(
 );
 
 foreach ($books as $title => $book) {
+    // Check if book was published after 1950.
+    if ($book['published'] >= 1950) {
+        echo PHP_EOL . $title . PHP_EOL;
+        echo "##########################" . PHP_EOL;
 
-	// Make sure book was published after 1950.
-	if ($book['published'] >= 1950) {
-		echo "\n" . $title . "\n";
-		echo "##########################\n";
- 
-		foreach ($book as $key => $metadata) {
-			echo "$key: $metadata.\n";
-		}
-			
-	}
+        foreach ($book as $key => $metadata) {
+            echo "$key: $metadata" . PHP_EOL;
+        }
+    }
 }
 ?>
 
