@@ -4,34 +4,32 @@ $a = 5;
 $b = 10; 
 $c = '10';
 
-// Shorten the next 2 statements into an if/else
+// Check if $a is less than $b
 if ($a < $b) {
-    // output the appropriate result
-    echo "$a is less than $b\n";
+    echo "$a is less than $b" . PHP_EOL;
 } else {
-    echo "$a is greater than $b\n";
+    echo "$a is greater than $b" . PHP_EOL;
 }
 
-// Shorten the next 2 statements into an if/else
+// Check if $b is greater than or equal to $c
 if ($b >= $c) {
-    // output the appropriate result
-    echo "$b is greater than or equal to $c\n";
+    echo "$b is greater than or equal to $c" . PHP_EOL;
 } else {
-    echo "$b is less than or equal to $c\n";
+    echo "$b is less than or equal to $c" . PHP_EOL;
 }
 
-// combine the next 4 conditionals into 
-// one if/else/elseif block that checks in order for:
-// identical, equal, not identical, not equal
+// Check if $b and $c are identical
 if ($b === $c) {
-    // output the appropriate result
-    echo "$b is identical to $c\n";
+    echo "$b is identical to $c" . PHP_EOL;
+  // Check if $b is equal to $c
 } elseif ($b == $c) {
-    echo "$b is equal to $c\n";
+    echo "$b is equal to $c" . PHP_EOL;
+  // Check if $b is not identical to $c
 } elseif ($b !== $c) {
-    echo "$b is not identical to $c\n";
+    echo "$b is not identical to $c" . PHP_EOL;
+
 } else {
-    echo "$b is not equal to $c\n";
+    echo "$b is not equal to $c" . PHP_EOL;
 } 
 
 ?>
