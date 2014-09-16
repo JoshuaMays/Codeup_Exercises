@@ -1,5 +1,7 @@
 <?php
 
+// Examples using continue and break in a loop.
+
 for ($i = 1; $i <=100; $i++) {
     if ($i % 2 != 0) {
     // Don't echo odd numbers, continue loop.
