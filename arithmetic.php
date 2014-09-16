@@ -1,5 +1,5 @@
 <?php
-// Function adds two numbers together.
+// Function to add two numbers
 function add($a, $b) {
     // Checks if arguments are numeric.
     if (is_Numeric($a) && is_Numeric($b)) {
@@ -10,7 +10,7 @@ function add($a, $b) {
     }
 
 }
-
+// Function to subtract two numbers.
 function subtract($a, $b) {
     // Checks if arguments are numeric.
     if (is_Numeric($a) && is_Numeric($b)) {
@@ -21,7 +21,7 @@ function subtract($a, $b) {
     }
 
 }
-
+// Function to multiply two numbers
 function multiply($a, $b) {
     // Checks if arguments are numeric.
     if (is_Numeric($a) && is_Numeric($b)) {
@@ -33,7 +33,7 @@ function multiply($a, $b) {
 
 
 }
-
+// Function to divide two numbers
 function divide($a, $b) {
     // Checks if arguments are numeric.
     if (is_Numeric($a) && is_Numeric($b)) {
@@ -52,7 +52,7 @@ function divide($a, $b) {
     }
 
 }
-
+// Function to find the modulus of two numbers
 function modular($a, $b) {
     // Checks if arguments are numeric.
     if (is_Numeric($a) && is_Numeric($b)) {
@@ -71,11 +71,11 @@ function modular($a, $b) {
 }
 
 }
-
+// Function to display error message if input is non-numeric
 function nonNumericError() {
     return 'ERROR: One of the values is non-numeric.';
 }
-
+// Function to display error message if attempting to divide by zero.
 function divideByZero($b) {
     return 'ERROR: Please never ever divide by zero.';
 }
