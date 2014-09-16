@@ -1,6 +1,6 @@
 <?php
 
-
+// Function to determine the number of days in a month.
 function daysOfMonth($month){
 	
 	$days = date('t', strtotime($month));
