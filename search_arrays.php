@@ -5,6 +5,7 @@ $names = ['Tina', 'Dana', 'Mike', 'Amy', 'Adam'];
 
 $compare = ['Tina', 'Dean', 'Mel', 'Amy','Michael'];
 
+// Function to search for a specific value within an array.
 function searchArrays($keyword, $array) {
     // Look for $keyword in $array and set the key of that array to $match
     $match = array_search($keyword, $array);
@@ -15,6 +16,7 @@ function searchArrays($keyword, $array) {
     return true;
 }
 
+// Function to compare two arrays
 function compareArrays($array1, $array2) {
     // Set a counter for the number of matches
     $numOfMatches = 0;
@@ -30,10 +32,11 @@ function compareArrays($array1, $array2) {
     }
     return $numOfMatches;
 }
+// Search an array for "Tina"
+$result = searchArrays("Tina", $names);
+echo $result . PHP_EOL;
 
-// $result = searchArrays("Tina", $names);
-// echo $result;
-
+// Compare two arrays
 $numOfMatches = compareArrays($names, $compare);
 echo $numOfMatches . " matches" . PHP_EOL;
 
