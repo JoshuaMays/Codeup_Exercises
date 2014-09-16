@@ -23,6 +23,7 @@ $books = array(
     )
 );
 
+// Looping through array of books and printing them to the REPL
 foreach ($books as $title => $book) {
     // Check if book was published after 1950.
     if ($book['published'] >= 1950) {
